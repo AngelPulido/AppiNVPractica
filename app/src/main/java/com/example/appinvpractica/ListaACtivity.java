@@ -35,6 +35,7 @@ public class ListaACtivity extends AppCompatActivity { // <- Yo usaré "ListaAct
             response.setRol(rol);
             response.setToken(token);
 
+
             responseList = new ArrayList<>();
             responseList.add(response);
 

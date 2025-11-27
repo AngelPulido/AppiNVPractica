@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/verdeFondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Barra superior con título -->
+    <TextView
+        android:id="@+id/tvTituloCitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CITAS"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:gravity="center"
+        android:background="@color/naranjaPrimario"
+        android:paddingVertical="16dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"/>
+
+    <!-- Mes actual -->
+    <TextView
+        android:id="@+id/tvMes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/blanco"
+        android:gravity="center"
+        android:paddingVertical="12dp"
+        android:background="@color/naranjaSecundario"
+        android:layout_marginBottom="8dp"
+        android:elevation="2dp"/>
+
+    <!-- Contenedor del calendario con sombra y borde -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_margin="8dp">
+
+        <com.kizitonwose.calendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cv_dayViewResource="@layout/day_layout" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

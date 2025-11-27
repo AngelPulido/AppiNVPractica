@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/verdeFondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View android:layout_width="match_parent" android:layout_height="72dp" android:background="@color/naranjaPrimario"/>
+    <TextView
+        android:text="Planes"
+        android:textSize="26sp"
+        android:textColor="@color/blanco"
+        android:padding="12dp"
+        android:layout_marginTop="-48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvPlanes" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>
